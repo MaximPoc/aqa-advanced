@@ -1,7 +1,7 @@
 const avarageGrade = Math.round(Math.random() * 100)
 console.log(avarageGrade)
 let grade
-switch (true) {
+switch (avarageGrade) {
     case avarageGrade >= 90:
         grade = 'Відмінно'
         break
