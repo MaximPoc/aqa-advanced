@@ -1,7 +1,10 @@
 const avarageGrade = Math.round(Math.random() * 100)
 console.log(avarageGrade)
 let grade
-switch (avarageGrade) {
+switch (true) {
+    case avarageGrade > 100:
+        grade = 'Ну ти вобще машина... це реально не можливо'
+        break
     case avarageGrade >= 90:
         grade = 'Відмінно'
         break
@@ -10,6 +13,9 @@ switch (avarageGrade) {
         break
     case avarageGrade >= 70:
         grade = 'Добре'
+        break
+    case avarageGrade >= 60:
+        grade = 'Задовільно'
         break
     case avarageGrade < 60:
         grade = 'Незадовільно'
