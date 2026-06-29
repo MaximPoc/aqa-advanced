@@ -19,7 +19,7 @@
     "transform": {}
   },
   "lint-staged": {
-    "*.js": "eslint"
+    "*.js": "npm run lint:fix"
   },
   "repository": {
     "type": "git",
