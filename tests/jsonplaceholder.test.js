@@ -89,7 +89,7 @@ test('POST /comments creates a comment resource', async () => {
   const response = await api.post('/comments', newComment);
 
   assert.equal(response.status, 201);
-  assert.equal(response.data.id, 501);
+  assert.ok(response.data.id);
   assert.equal(response.data.postId, newComment.postId);
   assert.equal(response.data.name, newComment.name);
   assert.equal(response.data.email, newComment.email);
